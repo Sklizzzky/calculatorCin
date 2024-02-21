@@ -80,6 +80,7 @@
 		<Button Name="teNx" Grid.Column="0" Grid.Row="6" Background="#21421E" HorizontalAlignment="Center"  Width="65" Height="50">
 			<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White">10ᵡ</TextBlock>
 		</Button>		
+		
 		<Button Name="Log" Grid.Column="0" Grid.Row="7" Background="#21421E" HorizontalAlignment="Center"  Width="65" Height="50">
 			<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White">log</TextBlock>
 		</Button>
