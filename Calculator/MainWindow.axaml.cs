@@ -41,7 +41,6 @@ namespace Calculator
             Multiplication.Click += Multiplication_Click;
             Division.Click += Division_Click;
             teNx.Click += TeNx_Click;
-          //  Erase.Click += Erase_Click; // удаление последнего символа
             smena.Click += Smena_Click;
             Minus.Click += Minus_Click;
             drob.Click += Drob_Click;
@@ -51,13 +50,30 @@ namespace Calculator
             fact.Click += Fact_Click;
             Sin.Click += Sin_Click;
             Cos.Click += Cos_Click;
-          //  Cot.Click += Cot_Click; // котанг
+            Cot.Click += Cot_Click;
             tan.Click += Tan_Click;
             Log.Click += Log_Click;
             Ln.Click += Ln_Click;
             x.Click += X_Click;
+            exp.Click += Exp_Click;
+            mod.Click += Mod_Click;
         }
 
+        private void Mod_Click(object? sender, RoutedEventArgs e)
+        {
+            ing = "mod";
+            choice = Convert.ToDouble(namepase.Text);
+            string number = "";
+            namepase.Text = number;
+        }
+
+        private void Exp_Click(object? sender, RoutedEventArgs e)
+        {
+            ing = ",e+";
+            choice = Convert.ToDouble(namepase.Text);
+            string number = "";
+            namepase.Text = number;
+        }
         private void X_Click(object? sender, RoutedEventArgs e)                                    // ²√x 
         {
             double number1 = Convert.ToDouble(namepase.Text);
@@ -65,20 +81,12 @@ namespace Calculator
             double number = Convert.ToDouble(Math.Pow(number2, number1));
             namepase.Text = $"{number}";
         }
-
-        //private void Cot_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
-        //{
-        //    double number1 = Convert.ToDouble(namepase.Text);
-        //    double answer = Convert.ToDouble((Math.C(number1)));
-        //    namepase.Text = $"{answer}";
-        //}
-
-
-
-
-
-
-
+        private void Cot_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+        {
+            double number = Convert.ToDouble(namepase.Text);
+            double cot = 1 / Math.Tan(number);
+            namepase.Text = Convert.ToString(cot);
+        }
         private void Equals_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)         // +/ -/ */ 10ᵡ/ / 
         {
             if (ing == "+")
@@ -134,8 +142,23 @@ namespace Calculator
                 choice = answer;
                 namepase.Text = $"{choice}";
             }
+            else if (ing ==",e+")
+            {
+                choice2 = Convert.ToDouble(namepase.Text);
+                double num = 10;
+                double num2 = Convert.ToInt32(choice2);
+                double num3 = Convert.ToInt32(choice);
+                double answer = num3 * (Math.Pow(num, num2));
+                namepase.Text = $"{answer}";
+            }
+            else if (ing == "mod")
+            {
+                choice2 = Convert.ToDouble(namepase.Text);
+                double answer = choice % choice2;
+                namepase.Text = $"{answer}";
+            }
         }
-        private void Tan_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)            // Tan Проверить от сюда 
+        private void Tan_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)            // Tan от
         {
             double number1 = Convert.ToDouble(namepase.Text);
             double answer = Convert.ToDouble((Math.Tan(number1)));
@@ -147,7 +170,7 @@ namespace Calculator
             double answer = Convert.ToDouble((Math.Cos(number1)));
             namepase.Text = $"{answer}";
         }
-        private void Sin_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)            // Sin Проверить до сюда 
+        private void Sin_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)            // Sin до
         {
             double number1 = Convert.ToDouble(namepase.Text);
             double answer = Convert.ToDouble((Math.Sin(number1)));
@@ -178,13 +201,13 @@ namespace Calculator
             double answer = Convert.ToDouble(number);
             namepase.Text = $"{answer}";
         }
-        private void Ln_Click(object? sender, RoutedEventArgs e)                                    // Ln Логарифм натуральный 
+        private void Ln_Click(object? sender, RoutedEventArgs e)                                    // Ln 
         {
             double number1 = Convert.ToDouble(namepase.Text);
             double number = Math.Log(number1);
             namepase.Text = Convert.ToString(number);
         }
-        private void Log_Click(object? sender, RoutedEventArgs e)                                   // Log Логарифм 
+        private void Log_Click(object? sender, RoutedEventArgs e)                                   // Log  
         {
             double number1 = Convert.ToDouble(namepase.Text);
             double number = Math.Log10(number1);
@@ -260,6 +283,7 @@ namespace Calculator
         private void Plus_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)           // + 
         {
             ing = "+";
+
             choice = Convert.ToDouble(namepase.Text);
             string number = "";
             namepase.Text = number;

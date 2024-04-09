@@ -7,7 +7,7 @@
         x:Class="Calculator.MainWindow"
         Title="Calculator">
 
-	<Grid Background="#008000" ShowGridLines="False">
+	<Grid Background="#8B8B8B" ShowGridLines="False">
 		<Grid.RowDefinitions>
 			<RowDefinition></RowDefinition>
 			<RowDefinition></RowDefinition>
@@ -26,121 +26,120 @@
 			<ColumnDefinition></ColumnDefinition>
 			<ColumnDefinition></ColumnDefinition>
 		</Grid.ColumnDefinitions>
-		<Button Name="One" Grid.Column="1" Grid.Row="5" Background="#21421E" HorizontalAlignment="Center"  Width="65" Height="50">
-			<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White">1</TextBlock>
+		<Button Name="One" Grid.Column="1" Grid.Row="5" Background="#FADADD" HorizontalAlignment="Center" BorderBrush="Black" CornerRadius="25"  Width="65" Height="50">
+			<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black">1</TextBlock>
 		</Button>
-		<Button Name="Two" Grid.Column="2" Grid.Row="5" Background="#21421E" HorizontalAlignment="Center"  Width="65" Height="50">
-			<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White">2</TextBlock>
+		<Button Name="Two" Grid.Column="2" Grid.Row="5" Background="#FADADD" BorderBrush="Black" CornerRadius="25" HorizontalAlignment="Center"  Width="65" Height="50">
+			<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black">2</TextBlock>
 		</Button>
-		<Button Name="Three" Grid.Column="3" Grid.Row="5" Background="#21421E" HorizontalAlignment="Center"  Width="65" Height="50">
-			<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White">3</TextBlock>
+		<Button Name="Three" Grid.Column="3" Grid.Row="5" Background="#FADADD" BorderBrush="Black" CornerRadius="25" HorizontalAlignment="Center"  Width="65" Height="50">
+			<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black">3</TextBlock>
 		</Button>
-		<Button Name="Four" Grid.Column="1" Grid.Row="6" Background="#21421E" HorizontalAlignment="Center"  Width="65" Height="50">
-			<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White">4</TextBlock>
+		<Button Name="Four" Grid.Column="1" Grid.Row="6" Background="#FADADD" BorderBrush="Black" CornerRadius="25" HorizontalAlignment="Center"  Width="65" Height="50">
+			<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black">4</TextBlock>
 		</Button>
-		<Button Name="Five" Grid.Column="2" Grid.Row="6" Background="#21421E" HorizontalAlignment="Center"  Width="65" Height="50">
-			<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White">5</TextBlock>
+		<Button Name="Five" Grid.Column="2" Grid.Row="6" Background="#FADADD" BorderBrush="Black" CornerRadius="25" HorizontalAlignment="Center"  Width="65" Height="50">
+			<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black">5</TextBlock>
 		</Button>
-		<Button Name="Six" Grid.Column="3" Grid.Row="6" Background="#21421E" HorizontalAlignment="Center"  Width="65" Height="50">
-			<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White">6</TextBlock>
+		<Button Name="Six" Grid.Column="3" Grid.Row="6" Background="#FADADD" BorderBrush="Black" CornerRadius="25" HorizontalAlignment="Center"  Width="65" Height="50">
+			<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black">6</TextBlock>
 		</Button>
-		<Button Name="Seven" Grid.Column="1" Grid.Row="7" Background="#21421E" HorizontalAlignment="Center"  Width="65" Height="50">
-			<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White">7</TextBlock>
+		<Button Name="Seven" Grid.Column="1" Grid.Row="7" Background="#FADADD" BorderBrush="Black" CornerRadius="25" HorizontalAlignment="Center"  Width="65" Height="50">
+			<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black">7</TextBlock>
 		</Button>
-		<Button Name="Eight" Grid.Column="2" Grid.Row="7" Background="#21421E" HorizontalAlignment="Center"  Width="65" Height="50">
-			<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White">8</TextBlock>
+		<Button Name="Eight" Grid.Column="2" Grid.Row="7" Background="#FADADD" BorderBrush="Black" CornerRadius="25" HorizontalAlignment="Center"  Width="65" Height="50">
+			<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black">8</TextBlock>
 		</Button>
-		<Button Name="Nine" Grid.Column="3" Grid.Row="7" Background="#21421E" HorizontalAlignment="Center"  Width="65" Height="50">
-			<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White">9</TextBlock>
+		<Button Name="Nine" Grid.Column="3" Grid.Row="7" Background="#FADADD" BorderBrush="Black" CornerRadius="25" HorizontalAlignment="Center"  Width="65" Height="50">
+			<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black">9</TextBlock>
 		</Button>
-		<Button Name="Null" Grid.Column="2" Grid.Row="8" Background="#21421E" HorizontalAlignment="Center"  Width="65" Height="50">
-			<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White">0</TextBlock>
+		<Button Name="Null" Grid.Column="2" Grid.Row="8" Background="#FADADD" BorderBrush="Black" CornerRadius="25" HorizontalAlignment="Center"  Width="65" Height="50">
+			<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black">0</TextBlock>
 		</Button>		
-		<Button Name="Plus" Grid.Column="4" Grid.Row="7" Background="#21421E" HorizontalAlignment="Center"  Width="65" Height="50">
+		<Button Name="Plus" Grid.Column="4" Grid.Row="6" Background="#F19CBB" BorderBrush="Black" CornerRadius="25" HorizontalAlignment="Center"  Width="65" Height="50">
 			<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontSize="25">+</TextBlock>
 		</Button>
-		<Button Name="Minus" Grid.Column="4" Grid.Row="6" Background="#21421E" HorizontalAlignment="Center"  Width="65" Height="50">
+		<Button Name="Minus" Grid.Column="4" Grid.Row="1" Background="#F19CBB" BorderBrush="Black" CornerRadius="25" HorizontalAlignment="Center"  Width="65" Height="50">
 			<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontSize="25">-</TextBlock>
 		</Button> 
-		<Button Name="Multiplication" Grid.Column="4" Grid.Row="5" Background="#21421E" HorizontalAlignment="Center" Width="65" Height="50">
+		<Button Name="Multiplication" Grid.Column="4" Grid.Row="5" Background="#F19CBB" BorderBrush="Black" CornerRadius="25" HorizontalAlignment="Center" Width="65" Height="50">
 			<TextBlock Margin="17 8 0 0" Foreground="White" FontSize="25">*</TextBlock>
 		</Button>
-		<Button Name="Division" Grid.Column="4" Grid.Row="4" Background="#21421E" HorizontalAlignment="Center"  Width="65" Height="50">
+		<Button Name="Division" Grid.Column="4" Grid.Row="4" Background="#F19CBB" BorderBrush="Black" CornerRadius="25" HorizontalAlignment="Center"  Width="65" Height="50">
 			<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontSize="20">/</TextBlock>
 		</Button>
-		<Button Name="Equals" Grid.Column="4" Grid.Row="8" Background="#21421E" HorizontalAlignment="Center"  Width="65" Height="50">
+		<Button Name="Equals" Grid.Column="4" Grid.Row="2" Background="#F19CBB" BorderBrush="Black" CornerRadius="25" HorizontalAlignment="Center"  Width="65" Height="50">
 			<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontSize="30">=</TextBlock>
 		</Button>		
-		<Button Name="Sin" Grid.Column="1" Grid.Row="3" Background="#21421E" HorizontalAlignment="Center"  Width="65" Height="50">
+		<Button Name="Sin" Grid.Column="1" Grid.Row="3" Background="#F19CBB" BorderBrush="Black" CornerRadius="25" HorizontalAlignment="Center"  Width="65" Height="50">
 			<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White">Sin</TextBlock>
 		</Button>		
-		<Button Name="xᵞ" Grid.Column="0" Grid.Row="5" Background="#21421E" HorizontalAlignment="Center"  Width="65" Height="50">
+		<Button Name="xᵞ" Grid.Column="0" Grid.Row="5" Background="#F19CBB" BorderBrush="Black" CornerRadius="25" HorizontalAlignment="Center"  Width="65" Height="50">
 			<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White">xᵞ</TextBlock>
 		</Button>
-		<Button Name="teNx" Grid.Column="0" Grid.Row="6" Background="#21421E" HorizontalAlignment="Center"  Width="65" Height="50">
+		<Button Name="teNx" Grid.Column="0" Grid.Row="6" Background="#F19CBB" BorderBrush="Black" CornerRadius="25" HorizontalAlignment="Center"  Width="65" Height="50">
 			<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White">10ᵡ</TextBlock>
-		</Button>		
-		
-		<Button Name="Log" Grid.Column="0" Grid.Row="7" Background="#21421E" HorizontalAlignment="Center"  Width="65" Height="50">
+		</Button>			
+		<Button Name="Log" Grid.Column="0" Grid.Row="7" Background="#F19CBB" BorderBrush="Black" CornerRadius="25" HorizontalAlignment="Center"  Width="65" Height="50">
 			<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White">log</TextBlock>
 		</Button>
-		<Button Name="Ln" Grid.Column="0" Grid.Row="8" Background="#21421E" HorizontalAlignment="Center"  Width="65" Height="50">
+		<Button Name="Ln" Grid.Column="0" Grid.Row="8" Background="#F19CBB" BorderBrush="Black" CornerRadius="25" HorizontalAlignment="Center"  Width="65" Height="50">
 			<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White">In</TextBlock>
 		</Button>		
-		<Button Name="smena" Grid.Column="1" Grid.Row="8" Background="#21421E" HorizontalAlignment="Center"  Width="65" Height="50">			
+		<Button Name="smena" Grid.Column="1" Grid.Row="8" Background="#F19CBB" BorderBrush="Black" CornerRadius="25" HorizontalAlignment="Center"  Width="65" Height="50">			
 			<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White">+/-</TextBlock>
 		</Button>
-		<Button Name="comma" Grid.Column="3" Grid.Row="8" Background="#21421E" HorizontalAlignment="Center"  Width="65" Height="50">			
+		<Button Name="comma" Grid.Column="3" Grid.Row="8" Background="#F19CBB" BorderBrush="Black" CornerRadius="25" HorizontalAlignment="Center"  Width="65" Height="50">			
 			<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" Text="," FontSize="22"></TextBlock>
 		</Button>		
-		<Button Name="x" Grid.Column="0" Grid.Row="4" Background="#21421E" HorizontalAlignment="Center"  Width="65" Height="50">			
+		<Button Name="x" Grid.Column="0" Grid.Row="4" Background="#F19CBB" BorderBrush="Black" CornerRadius="25" HorizontalAlignment="Center"  Width="65" Height="50">			
 			<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White">²√x</TextBlock>
 		</Button>		
-		<Button Name="sko" Grid.Column="1" Grid.Row="4" Background="#21421E" HorizontalAlignment="Center"  Width="65" Height="50">			
+		<Button Name="sko" Grid.Column="1" Grid.Row="4" Background="#F19CBB" BorderBrush="Black" CornerRadius="25" HorizontalAlignment="Center"  Width="65" Height="50">			
 			<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White">(</TextBlock>
 		</Button>
-		<Button Name="skob" Grid.Column="2" Grid.Row="4" Background="#21421E" HorizontalAlignment="Center"  Width="65" Height="50">			
+		<Button Name="skob" Grid.Column="2" Grid.Row="4" Background="#F19CBB" BorderBrush="Black" CornerRadius="25" HorizontalAlignment="Center"  Width="65" Height="50">			
 			<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White">)</TextBlock>
 		</Button>		
-		<Button Name="fact" Grid.Column="3" Grid.Row="4" Background="#21421E" HorizontalAlignment="Center"  Width="65" Height="50">			
+		<Button Name="fact" Grid.Column="3" Grid.Row="4" Background="#F19CBB" BorderBrush="Black" CornerRadius="25" HorizontalAlignment="Center"  Width="65" Height="50">			
 			<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White">n!</TextBlock>
 		</Button>		
-		<Button Name="step" Grid.Column="0" Grid.Row="3" Background="#21421E" HorizontalAlignment="Center"  Width="65" Height="50">			
+		<Button Name="step" Grid.Column="0" Grid.Row="3" Background="#F19CBB" BorderBrush="Black" CornerRadius="25" HorizontalAlignment="Center"  Width="65" Height="50">			
 			<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White">x²</TextBlock>
 		</Button>
-		<Button Name="drob" Grid.Column="1" Grid.Row="2" Background="#21421E" HorizontalAlignment="Center"  Width="65" Height="50">			
+		<Button Name="drob" Grid.Column="1" Grid.Row="2" Background="#F19CBB" BorderBrush="Black" CornerRadius="25" HorizontalAlignment="Center"  Width="65" Height="50">			
 			<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White">¹/x</TextBlock>
 		</Button>
-		<Button Name="Xmodul" Grid.Column="2" Grid.Row="2" Background="#21421E" HorizontalAlignment="Center"  Width="65" Height="50">			
+		<Button Name="Xmodul" Grid.Column="2" Grid.Row="2" Background="#F19CBB" BorderBrush="Black" CornerRadius="25" HorizontalAlignment="Center"  Width="65" Height="50">			
 			<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White">|x|</TextBlock>
 		</Button>		
-		<Button Name="Cot" Grid.Column="4" Grid.Row="3" Background="#21421E" HorizontalAlignment="Center"  Width="65" Height="50">			
+		<Button Name="Cot" Grid.Column="4" Grid.Row="3" Background="#F19CBB" BorderBrush="Black" CornerRadius="25" HorizontalAlignment="Center"  Width="65" Height="50">			
 			<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White">Cot</TextBlock>
 		</Button>
-		<Button Name="tan" Grid.Column="3" Grid.Row="3" Background="#21421E" HorizontalAlignment="Center"  Width="65" Height="50">			
+		<Button Name="tan" Grid.Column="3" Grid.Row="3" Background="#F19CBB" BorderBrush="Black" CornerRadius="25" HorizontalAlignment="Center"  Width="65" Height="50">			
 			<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White">tan</TextBlock>
 		</Button>
-		<Button Name="Pi" Grid.Column="0" Grid.Row="2" Background="#21421E" HorizontalAlignment="Center"  Width="65" Height="50">
+		<Button Name="Pi" Grid.Column="0" Grid.Row="2" Background="#F19CBB" BorderBrush="Black" CornerRadius="25" HorizontalAlignment="Center"  Width="65" Height="50">
 			<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White">п</TextBlock>
 		</Button>
-		<Button Name="e" Grid.Column="0" Grid.Row="1" Background="#21421E" HorizontalAlignment="Center"  Width="65" Height="50">
+		<Button Name="e" Grid.Column="0" Grid.Row="1" Background="#F19CBB" BorderBrush="Black" CornerRadius="25" HorizontalAlignment="Center"  Width="65" Height="50">
 			<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White">e</TextBlock>
 		</Button>		
-		<Button Name="mod" Grid.Column="1" Grid.Row="1" Background="#21421E" HorizontalAlignment="Center"  Width="65" Height="50">
+		<Button Name="mod" Grid.Column="1" Grid.Row="1" Background="#F19CBB" BorderBrush="Black" CornerRadius="25" HorizontalAlignment="Center"  Width="65" Height="50">
 			<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White">mod</TextBlock>
 		</Button>
-		<Button Name="exp" Grid.Column="2" Grid.Row="1" Background="#21421E" HorizontalAlignment="Center"  Width="65" Height="50">
+		<Button Name="exp" Grid.Column="2" Grid.Row="1" Background="#F19CBB" BorderBrush="Black" CornerRadius="25" HorizontalAlignment="Center"  Width="65" Height="50">
 			<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White">exp</TextBlock>
 		</Button>		
-		<Button Name="Cos" Grid.Column="2" Grid.Row="3" Background="#21421E" HorizontalAlignment="Center"  Width="65" Height="50">
+		<Button Name="Cos" Grid.Column="2" Grid.Row="3" Background="#F19CBB" BorderBrush="Black" CornerRadius="25" HorizontalAlignment="Center"  Width="65" Height="50">
 			<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White">Cos</TextBlock>
 		</Button>
-		<Button Name="Delete" Grid.Column="3" Grid.Row="1" Background="#21421E" HorizontalAlignment="Center"  Width="65" Height="50">
+		<Button Name="Delete" Grid.Column="3" Grid.Row="1" Background="#D71868" BorderBrush="Black" CornerRadius="25" HorizontalAlignment="Center"  Width="65" Height="50">
 			<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White">C</TextBlock>
 		</Button>
-		<Button Name="Erase" Grid.Column="3" Grid.Row="2" Background="#21421E" HorizontalAlignment="Center"  Width="65" Height="50">
+		<Button Name="Erase" Grid.Column="3" Grid.Row="2" Background="#D71868" BorderBrush="Black" CornerRadius="25" HorizontalAlignment="Center"  Width="65" Height="50">
 			<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White">←</TextBlock>
 		</Button>
-		<TextBox Grid.ColumnSpan="5" Grid.RowSpan="1" Grid.Row="0" x:Name="namepase" Watermark="0"></TextBox>		
+		<TextBox Grid.ColumnSpan="5" Grid.RowSpan="1" Grid.Row="0" BorderBrush="Gray" CornerRadius="10" x:Name="namepase" Watermark="0"></TextBox>		
 	</Grid>		
 </Window>
